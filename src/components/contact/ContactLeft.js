@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
 const ContactLeft = () => {
@@ -11,30 +11,30 @@ const ContactLeft = () => {
         alt="contactImg"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">Mukul Kholiya</h3>
+        <h3 className="text-3xl font-bold text-white">Hariom Sharma</h3>
         <p className="text-lg font-normal text-gray-400">
-          Full Stack Java Developer
+          Full Stack software Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
         I’d love to hear from you! Whether you have a question or just want to say hi.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+91 9319213647</span>
+          Phone: <span className="text-lightText">+91 7037582917</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">mukulkholiya96@gmail.com</span>
+          Email: <span className="text-lightText">hariomsharmaji70@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
-          <a className="bannerIcon" href="https://www.facebook.com/mukul.kholiya.5">
-            <FaFacebookF />
+          <a className="bannerIcon" href="https://www.instagram.com/hariom_sharma210/">
+            <FaInstagram />
           </a>
-          <a className="bannerIcon" href="https://github.com/MukulKholiya">
+          <a className="bannerIcon" href="https://github.com/Hariom-sharma01">
             <FaGithub />
           </a>
-          <a className="bannerIcon" href="https://www.linkedin.com/in/mukul-kholiya-b76b75263/">
+          <a className="bannerIcon" href="https://www.linkedin.com/in/hariom-sharma-7a3681250/">
             <FaLinkedinIn />
           </a>
         </div>

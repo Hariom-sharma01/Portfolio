@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo} from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -15,22 +15,20 @@ const Projects = () => {
           des="My Projects"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 xl:gap-14">
         <ProjectsCard
-          title="Build Smart Online"
-          des="An online marketplace where you can buy all your essentials while contruction of your homes, offices, etc.
-          Technologies involved in development are :- Java(Spring Boot), Java Script(React), Thymeleaf, HTML, CSS. "
+          title="Alumni Connect"
+          des=" Build an interactive Alumni Connect platform to facilitate seamless networking between alumni and students,
+ enhancing professional connections and mentorship opportunities Technologies involved in development are :- React.js, Node.js, Tailwind CSS and MongoDB."
           src={projectOne}
+          link="#"
         />
         <ProjectsCard
-          title="Smart Contact Manager"
-          des=" A web Application created on Java and Spring Boot to manage your contacts with login, signup and Email-verification functionality."
+          title="XCEL IT Solutions Website "
+          des="Designed a responsive and visually appealing website for XCEL IT Solutions to showcase IT services and client
+ projects effectively."
           src={projectTwo}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Coming Soon..."
-          src={projectThree}
+          link="https://xcelitsol.com/"
         />
         
       </div>
