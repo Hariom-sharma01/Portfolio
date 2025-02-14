@@ -46,7 +46,8 @@ const Navbar = () => {
               <img className="w-32 rounded-full" src={logo} alt="logo" />
 
                 <p className="text-sm text-gray-400 mt-2">
-                I am a full stack java developer with expertise in modern Technologies like Spring Boot, React, Hibernate, Microservices, Express and Node.js .
+                I am a full-stack developer proficient in JavaScript, React.js, Node.js, Express.js, and MongoDB, with a strong foundation in data structures,
+         algorithms, and software development. Passionate about building responsive and scalable web applications.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -74,7 +75,15 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  //links of insta github 
+                    <a className="bannerIcon" href="https://www.instagram.com/hariom_sharma210/">
+                      <FaInstagram />
+                    </a>
+                    <a className="bannerIcon" href="https://github.com/Hariom-sharma01">
+                      <FaGithub />
+                    </a>
+                    <a className="bannerIcon" href="https://www.linkedin.com/in/hariom-sharma-7a3681250/">
+                      <FaLinkedinIn />
+                    </a> 
                 </div>
               </div>
               <span
