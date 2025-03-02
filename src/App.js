@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Footer from "./components/footer/FooterBottom";
+import CodingProfiles from "./components/Coding_profile/Coding";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Banner />
         <Features />
+        <CodingProfiles/>
         <Projects />
         <Resume />
         <Contact />
