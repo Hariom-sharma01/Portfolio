@@ -31,7 +31,7 @@ const Education = () => {
           />
           <ResumeCard
             title="High School Education"
-            subTitle="St. Andrews School ,Agra (2018 - 2019)"
+            subTitle="Manglik Siksha Kendra ,Agra (2018 - 2019)"
             result="9/10"
             des="I have completed my High School Education from this school with a remarkable academic record."
           />
