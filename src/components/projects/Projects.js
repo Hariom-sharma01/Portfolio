@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo} from "../../assets/index";
+import { projectOne, projectTwo,projectThree } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -31,6 +31,16 @@ const Projects = () => {
           link="https://xcelitsol.com/"
         />
         
+        <ProjectsCard
+        title="MyBook"
+        des=" Built a secure and user-friendly digital journaling platform where users can write, manage, and personalize their
+              private entries.Implemented authentication using JWT with secure HTTP-only cookies and developed frontend features such as
+              entry tracking, profile customization, and responsive UI with Tailwind CSS"
+        src={projectThree}
+        link="https://mybookbyhs.vercel.app/"
+        />
+       
+
       </div>
     </section>
   );
