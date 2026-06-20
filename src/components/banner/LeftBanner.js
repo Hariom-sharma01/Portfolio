@@ -2,71 +2,132 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {
   FaLinkedinIn,
-  FaReact,
   FaGithub,
   FaInstagram,
-  FaNode,
+  FaDatabase,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiPython,
+  SiApachespark,
+  SiDatabricks,
+  SiMicrosoftazure,
+} from "react-icons/si";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Full Stack Software Developer.", "MERN Stack Developer."],
+    words: [
+      "Data Engineer.",
+      "Databricks Developer.",
+      "Azure Data Engineer.",
+      "Big Data Engineer.",
+      "ETL Pipeline Developer.",
+    ],
     loop: true,
-    typeSpeed: 20,
-    deleteSpeed: 10,
+    typeSpeed: 40,
+    deleteSpeed: 20,
     delaySpeed: 2000,
   });
+
   return (
-    <div className="w-full  flex flex-col gap-20 ">
-      <div className="flex flex-col gap-5 items-center">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
-        <h1 className="text-6xl font-bold text-white">
-          Hi, I'm <span className="text-designColor capitalize">Hariom Sharma</span>
+    <div className="w-full flex flex-col gap-20">
+      {/* Hero Content */}
+      <div className="flex flex-col gap-5 items-center text-center">
+        <h4 className="text-lg font-normal tracking-widest text-gray-400">
+          WELCOME TO MY WORLD
+        </h4>
+
+        <h1 className="text-5xl md:text-6xl font-bold text-white">
+          Hi, I'm{" "}
+          <span className="text-designColor capitalize">
+            Hariom Sharma
+          </span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
-          a <span>{text}</span>
+
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          a{" "}
+          <span className="text-designColor">
+            {text}
+          </span>
           <Cursor
-            cursorBlinking="false"
+            cursorBlinking={false}
             cursorStyle="|"
             cursorColor="#ff014f"
           />
         </h2>
-        <p className="text-base font-bodyFont leading-6 tracking-wide">
-        I am a full-stack developer proficient in JavaScript, React.js, Node.js, Express.js, and MongoDB, with a strong foundation in data structures,
-         algorithms, and software development. Passionate about building responsive and scalable web applications.
+
+        <p className="max-w-4xl text-base md:text-lg font-bodyFont leading-8 tracking-wide text-gray-300">
+          Data Engineer with experience in designing and optimizing scalable
+          data pipelines, ETL workflows, and cloud-based data solutions.
+          Skilled in Python, SQL, Databricks, Apache Spark, Azure Data Factory,
+          and Azure cloud services. Passionate about transforming complex data
+          into actionable insights and building reliable data platforms that
+          drive business decisions.
         </p>
       </div>
-      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
+
+      {/* Social Links & Skills */}
+      <div className="flex flex-col xl:flex-row gap-10 justify-between">
+        {/* Social Links */}
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me on
+            Find Me On
           </h2>
+
           <div className="flex gap-4">
-                      <a className="bannerIcon" href="https://www.instagram.com/hariom_sharma210/">
-                        <FaInstagram />
-                      </a>
-                      <a className="bannerIcon" href="https://github.com/Hariom-sharma01">
-                        <FaGithub />
-                      </a>
-                      <a className="bannerIcon" href="https://www.linkedin.com/in/hariom-sharma-7a3681250/">
-                        <FaLinkedinIn />
-                      </a>
+            <a
+              className="bannerIcon"
+              href="https://www.instagram.com/hariom_sharma210/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              className="bannerIcon"
+              href="https://github.com/Hariom-sharma01"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              className="bannerIcon"
+              href="https://www.linkedin.com/in/hariom-sharma-7a3681250/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
+
+        {/* Skills */}
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILLS
+            Core Skills
           </h2>
-          <div className="flex gap-4">
+
+          <div className="flex gap-4 flex-wrap">
             <span className="bannerIcon">
-              <FaReact />
+              <SiPython />
             </span>
+
             <span className="bannerIcon">
-              <FaNode />
+              <FaDatabase />
             </span>
+
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <SiApachespark />
+            </span>
+
+            <span className="bannerIcon">
+              <SiDatabricks />
+            </span>
+
+            <span className="bannerIcon">
+              <SiMicrosoftazure />
             </span>
           </div>
         </div>
