@@ -47,7 +47,7 @@ const Resume = () => {
       {/* Download Resume Button */}
       <div className="flex justify-center mt-10">
         <a
-          href="https://drive.google.com/file/d/1IK28JBIG6RqSJsrTmZrv26Pert71k-U4/view?usp=sharing"
+          href="https://drive.google.com/file/d/1VGbwkdXJmeb7s54RYC4tz8Uk-RDabsvg/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-designColor text-white px-6 py-3 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-opacity-90"
